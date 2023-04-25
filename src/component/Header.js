@@ -1,34 +1,31 @@
 import React from 'react';
-import { Button,Container,Form,Nav,Navbar} from 'react-bootstrap';
+import { Button,Container,Form,Nav,NavLink,Navbar} from 'react-bootstrap';
 import './Header.css';
 
 function Header() {
   return (
-    <Navbar bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Sathya Foods</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse id="navbarScroll">
-          <Nav
-            className="me-auto my-2 my-lg-0"
-
-            style={{ maxHeight: '100px' }}
-            navbarScroll>
-            <Nav.Link href="#action1">Home</Nav.Link>
-            <Nav.Link href="#action2">Product</Nav.Link>
-            <Nav.Link href="#action3">Condact</Nav.Link>
-          </Nav>
-          <Form className="d-flex">
-            <Form.Control
-              type="search"
-              placeholder="Search"
-              className="me-2"
-              aria-label="Search"
-            />
-            <Button variant="outline-success">Search</Button>
-          </Form>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar>
+        <Container>
+            <Navbar.Brand href='#'>Sathya Foods</Navbar.Brand>
+            <Nav className='justify-content-end'id="nav" gap="6rem">
+                <NavLink href="#home">Home</NavLink>
+                <NavLink href="#product">Product</NavLink>
+                <NavLink href="#condact">Contact</NavLink>
+            </Nav>
+            <Form className="d-flex">
+                  <Form.Control
+                    type="search"
+                    placeholder="Search"
+                    className="me-2"
+                    aria-label="Search"
+                  />
+                  <Button variant="outline-success">Search</Button>
+            </Form>
+            <Nav className='justify-content-end'id="nav">
+                <Button variant="secondary" size="lg" active>Login </Button>
+                <Button variant="secondary" size="lg" active> Logout </Button>
+            </Nav>
+        </Container>
     </Navbar>
   )
 }
