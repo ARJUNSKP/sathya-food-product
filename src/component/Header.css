@@ -12,6 +12,13 @@
     padding-left: 5rem;
 }
 .search-bar{
-    width: 28rem;
+    width: 45rem;
     margin-left: 11rem;
+}
+.buttnlogin{
+    margin-left: 3rem;
+    padding: 2rem;
+}
+@media screen and (max-width:1390px){
+
 }

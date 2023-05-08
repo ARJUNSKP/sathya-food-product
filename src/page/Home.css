@@ -1,0 +1,33 @@
+.home{
+    background-color: #962e2e;
+}
+/* .tagline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 6rem 21rem;
+} */
+.tagline{
+    text-align: center;
+    margin: 6rem 0;
+}
+.tagline h1{
+    font-family: forte ;
+}
+
+#inputname{
+    background-color: #f8f8f8;
+}
+.new-product-list1{
+    display: flex;
+    margin:5rem 0;
+    gap: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#newproduct{
+    text-align: center;
+}
+#new-product{
+    margin: 2rem;
+}

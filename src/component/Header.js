@@ -9,21 +9,20 @@ function Header() {
     <Navbar id="navbar">
         <Container fluid>
             <Navbar.Brand href='#'>Sathya Foods</Navbar.Brand>
-            <Routes>
-              <Nav className='justify-content-end navbar'id="nav" gap="6rem">
+              <Nav className='justify-content-end navbar navbarlinkes'id="nav" gap="6rem">
                 <NavLink href="#product">Home</NavLink>
                 <NavLink href="#product">Product</NavLink>
                 <NavLink href="#condact">Contact</NavLink>
               </Nav>
-            </Routes>
             <Form className="d-flex search-bar">
                   <Form.Control
                     type="search"
                     placeholder="Search"
-                    className="me-1 size"
+                    className="me-1"
+                    id="inputname"
                     aria-label="Search"
                   />
-                  <Button variant="outline-success">Search</Button>
+                  <Button variant="outline-success" className='buttnlogin'>Search</Button>
 
             </Form>
             <Nav className='justify-content-end'>
